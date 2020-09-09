@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500;1,900&display=swap');
+
+
+.container{
+    margin: 50px 0;
+}
+
+.card{
+    background: rgba(215, 231, 245, 0.3) !important;
+    margin: 1% 1% !important;
+    border-radius: 15px !important;
+}
+
+.fontc{
+    font-family: 'Montserrat', sans-serif !important; 
+}
+
+.infected{
+    border-bottom: 10px solid rgb(233, 245, 10);
+}
+.yellow{
+    font-family: 'Montserrat', sans-serif !important;
+    color: yellow !important;
+}
+
+.active{
+    border-bottom: 10px solid blue;
+}
+.blue{
+    font-family: 'Montserrat', sans-serif !important ;
+    color: blue !important;
+}
+
+.recover{
+    border-bottom: 10px solid green;
+}
+.green{
+    font-family: 'Montserrat', sans-serif !important ;
+    color: green !important;
+}
+
+.death{
+    border-bottom: 10px solid red;
+}
+.red{
+    font-family: 'Montserrat', sans-serif !important ;
+    color: red !important;
+}

@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    
+
+}
+
+.containercountry{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
