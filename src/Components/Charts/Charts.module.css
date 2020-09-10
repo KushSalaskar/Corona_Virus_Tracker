@@ -7,9 +7,11 @@
 }
 
 .containercountry{
+    margin-top: 15px;
     display: grid;
     align-content: center;
     justify-content: center;
     grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 15px;
     width: 90%;
 }
