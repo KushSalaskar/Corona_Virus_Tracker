@@ -11,4 +11,5 @@
     align-content: center;
     justify-content: center;
     grid-template-columns: repeat(1, 100%);
+    width: 90%;
 }
