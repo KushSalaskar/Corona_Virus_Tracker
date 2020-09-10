@@ -32,11 +32,11 @@
 }
 
 .recover{
-    border-bottom: 10px solid green;
+    border-bottom: 10px solid rgb(15, 252, 3);
 }
 .green{
     font-family: 'Montserrat', sans-serif !important ;
-    color: green !important;
+    color: rgb(15, 252, 3) !important;
 }
 
 .death{

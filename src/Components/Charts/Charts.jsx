@@ -43,7 +43,7 @@ const Charts = ({data: {confirmed, recovered, deaths}, country}) => {
                 labels:['Infected', 'Active', 'Recovered', 'Deaths'],
                 datasets:[{
                     label: 'People',
-                    backgroundColor: ['rgb(233, 245, 10)','blue' ,'green','red'],
+                    backgroundColor: ['rgb(233, 245, 10)','blue' ,'rgb(15, 252, 3)','red'],
                     data: [confirmed.value, confirmed.value-(recovered.value+deaths.value), recovered.value, deaths.value]
                 }]
              }}
@@ -63,7 +63,7 @@ const Charts = ({data: {confirmed, recovered, deaths}, country}) => {
                 labels:['Active', 'Recovered', 'Deaths'],
                 datasets:[{
                     label: 'People',
-                    backgroundColor: ['blue', 'green', 'red'],
+                    backgroundColor: ['blue', 'rgb(15, 252, 3)', 'red'],
                     data: [confirmed.value-(recovered.value+deaths.value), recovered.value, deaths.value]
                 }]
             }}
