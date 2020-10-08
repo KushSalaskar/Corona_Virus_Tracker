@@ -1,39 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { fetchDailyData } from '../api/index.js';
-import { Line, Bar, Doughnut } from 'react-chartjs-2';
+//import React, { useState, useEffect } from 'react';
+import React from 'react';
+//import { fetchDailyData } from '../api/index.js';
+// import { Line, Bar, Doughnut } from 'react-chartjs-2';
+import { Bar, Doughnut } from 'react-chartjs-2';
 import styles from './Charts.module.css';
 
 const Charts = ({data: {confirmed, recovered, deaths}, country}) => {
-    const [dailyData, setDailyData] = useState([])
+    // const [dailyData, setDailyData] = useState([])
 
-    useEffect(() =>{
-        const fetch = async () => {
-            setDailyData(await fetchDailyData())
-        }
-        fetch()
-    }, []);
+    // useEffect(() =>{
+    //     const fetch = async () => {
+    //         setDailyData(await fetchDailyData())
+    //     }
+    //     fetch()
+    // }, []);
 
-    const lineChart = (
-        dailyData.length
-        ? (
-            <Line 
-            data= {{
-                labels: dailyData.map(({date}) => date),
-                datasets: [{
-                    data: dailyData.map(({confirmed}) => confirmed),
-                    label: 'Infected',
-                    bordercolor: 'yellow',
-                    fill: true
-                }, {
-                    data: dailyData.map(({deaths}) => deaths),
-                    label: 'Deaths',
-                    bordercolor: 'red',
-                    backgroundColor: 'rgba(255, 0, 0, 0.3)',
-                    fill: true
-                }]
-            }}
-            />) : null
-    );
+    // const lineChart = (
+    //     dailyData.length
+    //     ? (
+    //         <Line 
+    //         data= {{
+    //             labels: dailyData.map(({date}) => date),
+    //             datasets: [{
+    //                 data: dailyData.map(({confirmed}) => confirmed),
+    //                 label: 'Infected',
+    //                 bordercolor: 'yellow',
+    //                 fill: true
+    //             }, {
+    //                 data: dailyData.map(({deaths}) => deaths),
+    //                 label: 'Deaths',
+    //                 bordercolor: 'red',
+    //                 backgroundColor: 'rgba(255, 0, 0, 0.3)',
+    //                 fill: true
+    //             }]
+    //         }}
+    //         />) : null
+    // );
 
     const barChart = (
         confirmed 
@@ -79,8 +81,10 @@ const Charts = ({data: {confirmed, recovered, deaths}, country}) => {
     return(
     
         <div className = {country ? styles.containercountry : styles.container}>
-            {country ? barChart : lineChart}
-            {country ? pieChart : null}          
+            {/* {country ? barChart : lineChart}
+            {country ? pieChart : null}           */}
+            {country ? barChart : barChart}
+            {country ? pieChart : null}
         </div>
     
     );
